@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>2048 game</title>
+		<meta charset='UTF-8' />
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<header>
+		</header>
+		<main>
+			<h1>2048</h1>
+			<div id = "setup">
+				Board size = <input id="tailleBoard" name = "boardSize" size="2" value="4" /><br />
+				<button id="start">Start</button>
+			</div>
+			<div id="gameInfos">
+				<div id="score"></div>
+				<div id="bestScore"></div>
+				<div id="backToTheFuture">
+					<div id="history"></div>
+					<button id="back">Back</button>
+				</div>
+			</div>
+			<div id="error"></div>
+			<div id="lost">
+				<h2>Game over !</h2>
+				Your score : <span id="yourScore"></span><br /><br />
+				Board size = <input id="tailleBoard2" name = "boardSize" size="2" /><br />
+				<button id="bRestart">Restart</button>
+			</div>
+
+			<div id="win">
+				<h2>You won this game !!</h2>
+				Your score : <span id="yourScore"></span><br /><br />
+				Board size = <input id="tailleBoard3" name = "boardSize" size="2" /><br />
+				<button id="bContinue">Continue to play</button> <button id="bRestart">Restart</button>
+			</div>
+			
+			<div id="boardZone"></div>
+			<div id="remele">
+				<button id="rebelotte">Restart game</button>
+			
+				<button id="resetGame">Reset game</button>
+			</div>
+			
+			
+		</main>
+		<aside></aside>
+		<footer>
+			<address></address>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="jquery.my2048.js"></script>
+		<script src="Base2048.js"></script>
+	</body>
+</html>
