@@ -8,7 +8,7 @@ var history = new Array;
 var historique = new Array;
 var historyCount = -1;
 var continuePlay = 0;
-var defaultValue = 512;
+var defaultValue = 0;
 
 
 $(document).ready(function (){
